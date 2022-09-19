@@ -29,6 +29,11 @@ li {
     padding: 0;
 }
 
+a {
+    text-decoration: none !important;
+    border: none !important;
+  }
+
 
 p {
     font-family: 'Arial';
@@ -38,21 +43,12 @@ p {
 }
 
 
-h3 {
+.title-second {
     font-weight: 400;
     font-size: 35px;
     line-height: 130%;
     align-items: center;
     letter-spacing: 0.06em;
-}
-
-
-h4 {
-    line-height: 115%;
-    align-items: center;
-    text-align: center;
-    letter-spacing: 0.06em;
-    color: #545454;
 }
 
 
@@ -62,63 +58,72 @@ h4 {
    padding: 0 40px;
 }
 
-
-.header{
-    padding-top: 30px;
-    background:  white;
-    margin-bottom: 30px;
-}
-
-
-.menu{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-
-.menu__paragraph{
-    align-items: center;
-    letter-spacing: 0.1em;
-    color: #292929;
-    padding-top: 10px;
-}
-
-
-.menu__logo__item{
-
-    font-size: 32px;
-    line-height: 110%;
-}
-
-
-.menu__item + .menu__item{
-    margin-left: 35px;   
-}
-
-
-.menu__link{
-    color: #545454;
-    font-size: 15px;
-    font-family: 'Aboreto', cursive;
-    transition: 1000ms;
+ 
+ .header{
+     padding-top: 30px;
+     padding-bottom: 30px;
+     background: white
+    }
+ 
+ 
+ .menu{
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+ }
+ 
+ 
+ .menu__logo-desc{
+     align-items: center;
+     letter-spacing: 0.1em;
+     color:  #545454;
+     padding-top: 10px;
+ }
+ 
+ 
+ .menu__logo{
+     color:  #545454;;
+     font-size: 32px;
+     line-height: 110%;
+     text-decoration: none;
+ }
+ .menu__logo-desc{
     text-decoration: none;
-}
+ }
+ 
+ .nav__link + .nav__link{
+     margin-left: 35px;   
+ }
+ 
+ 
+ .nav__link{
+     color:  #545454;;
+     font-size: 15px;
+     font-family: 'Aboreto', cursive;
+     transition: 1000ms;
+     text-decoration: none;
+ }
+ 
+ 
+ .nav__link:hover{
+    color: #88664d;
+    text-decoration:underline #F1CDB3
+ }
+ 
+ 
 
-
-.menu__link:hover{
-   color: #88664d; 
-}
-
-
-
-.our__pets{
+.our-pets{
     padding: 80px 50px 100px 50px;
     background: #F6F6F6;
+    padding: 80px 50px 100px 50px;
+    background: #F6F6F6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 
-.our__pets__slider{
+.our-pets__slider{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -127,7 +132,7 @@ h4 {
 }
 
 
-.our__pets__slider-item{
+.our-pets__slider-item{
     background: #FAFAFA;
     border-radius: 9px;
     margin-right: 40px;
@@ -135,7 +140,7 @@ h4 {
 }
 
 
-.our__pets__name{
+.our-pets__name{
     text-align: center;
     letter-spacing: 0.06em;
     font-size: 20px;
@@ -144,7 +149,7 @@ h4 {
 }
 
 
-.our__pets__title{
+.our-pets__title{
     font-size: 35px;
     line-height: 130%;
     text-align: center;
@@ -152,7 +157,7 @@ h4 {
 }
 
 
-.our__pets__button{
+.our-pets__button{
     border-color:  #F1CDB3;;
     background-color: #F6F6F6;
     color: #292929;
@@ -168,14 +173,14 @@ h4 {
 }
 
 
-.our__pets__button:hover{
+.our-pets__button:hover{
     background: #FDDCC4;
     transition: 2000ms;
 }
 
 
 
-.our__pets-button-inner{
+.our-pets-button-inner{
     text-align: center;
 }
 
