@@ -8,51 +8,69 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Aboreto&family=Montserrat&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/reset.css">
+<link rel="stylesheet" href="css/slick.css">
+<link rel="stylesheet" href="css/slick-theme.css">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/reset.css">
+    <meta name="viewport" content="width=device-width">
 
 </head>
 <body>
 
-    <!-- header -->
-
+  
+    
     <header class="header">
       <div class="container">
             <div class="menu">
-                <a href="index.html" class="menu__logo-wrapper">
-                    <h5 class="menu__logo">Cozy House</h5>
-                    <p class="menu__logo-desc">Shelter for pets in Boston</p>
-                </a>
-                <nav class="menu__nav nav" >
-                        <a href="index.html" class="nav__link">
-                            About the shelter
-                        </a>
-                        <a href="pageTwo.html" class="nav__link">
-                            Our pets   
-                        </a>
-                        <a href="#" class="nav__link">
-                            Help the shelter
-                        </a>
-                        <a href="#" class="nav__link">
-                            Contacts
-                        </a>
-                 </nav>
+                
+                    <a href="index.html" class="menu__logo-wrapper">
+                        <h5 class="menu__logo">Cozy House</h5>
+                        <p class="menu__logo-desc">Shelter for pets in Boston</p>
+                    </a>
+                    <nav class="menu__nav nav" id="menu" >
+                            <a href="index.html" class="nav__link">
+                                About the shelter
+                            </a>
+                            <a href="pageTwo.html" class="nav__link nav__left">
+                                Our pets   
+                            </a>
+                            <a href="#" class="nav__link nav__left">
+                                Help the shelter
+                            </a>
+                            <a href="#" class="nav__link nav__left">
+                                Contacts
+                            </a>
+                     </nav>
+    
+              
+                
+                 <div class="hamb">
+                    <div class="hamb__field" id="hamb">
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                    </div>
+                 
+                </div>
             </div>
+            <div class="header_popup" id="header_popup">
+                
+            </div>
+            
          <div class="banner">
                   <div class="banner__desc">
                       <h1 class="banner__title">Not only people <br> need a house</h1>
                       <p class="banner__text">We offer to give a chance to a little and nice puppy with an extremely wide and open heart. He or she will love you more than anybody else in the world, you will see!</p>
                       <button class="main_button banner__button">Make a friend</button>
                   </div>
-                  <img src="img/Main_dog.svg" alt="dog" class="anner__img">   
+                  <img src="img/Main_dog.svg" alt="dog" class="banner__img">   
          </div>
         
     </div>
     </header>
 
-    <!-- section about -->
-
-    <section class="about">
+     <!-- section about -->
+ <section class="about">
             <img src="img/about__img.svg" alt="cat and dog" class="about__img">
             <div class="about__text">
                 <h2 class="about__title title-second">About the shelter <br>“Cozy House”</h2>
@@ -60,32 +78,49 @@
                 <p class="about__paragraph">We feed our wards with the best food and make sure that they do not get sick, feel comfortable (including psychologically) and well. We are supported by 87 volunteers and 28 employees of various skill levels. About 12% of the animals are taken by the shelter staff. Taking care of the animals, they become attached to the pets and would hardly ever leave them alone.</p>
             </div>
     </section>
-    <section class="our-pets">
+       <section class="our-pets">
         <h2 class="our-pets__title title-second">Our friends who <br>
             are looking for a house</h2>
-        <div class="our-pets__slider">
-            <div class="slider-item">
-                <img src="img/pets-katrine.svg" alt="Katrine" class="slider-item__img">
-                <h6 class="slider-item__name">Katrine</h6>
-               <button class="second_btn slider-item__button popup-link">Learn more</button>
-            </div>
-            <div class="slider-item">
-                <img src="img/pets-jennifer.svg" alt="Jennifer" class="slider-item__img">
-                <h6 class="slider-item__name">Jennifer</h6>
-                    <button class="second_btn slider-item__button popup-link" onclick="togglePopup()">Learn more</button>
-            </div>
-            <div class="slider-item">
-                <img src="img/pets-woody.svg" alt="Woody" class="slider-item__img">
-                <h6 class="slider-item__name">Woody</h6>
-                <a href="#popup-2 popup-link" class="button__popup"></a><button class="second_btn slider-item__button popup-link">Learn more</button>
-            </div>
+        <div class="slider">
+                <div class="slider-item">
+                    <img src="img/pets-katrine.svg" alt="Katrine" class="slider-item__img">
+                    <h6 class="slider-item__name">Katrine</h6>
+                   <button class="second_btn slider-item__button popup-link">Learn more</button>
+                </div>
+                <div class="slider-item">
+                    <img src="img/pets-jennifer.svg" alt="Jennifer" class="slider-item__img">
+                    <h6 class="slider-item__name">Jennifer</h6>
+                        <button class="second_btn slider-item__button popup-link" onclick="togglePopup()">Learn more</button>
+                </div>
+                <div class="slider-item">
+                    <img src="img/pets-woody.svg" alt="Woody" class="slider-item__img">
+                    <h6 class="slider-item__name">Woody</h6>
+                    <a href="#popup-2 popup-link" class="button__popup"></a><button class="second_btn slider-item__button popup-link">Learn more</button>
+                </div>
+                <div class="slider-item">
+                    <img src="img/pets-katrine.svg" alt="Katrine" class="slider-item__img">
+                    <h6 class="slider-item__name">Katrine</h6>
+                   <button class="second_btn slider-item__button popup-link">Learn more</button>
+                </div>
+                <div class="slider-item">
+                    <img src="img/pets-jennifer.svg" alt="Jennifer" class="slider-item__img">
+                    <h6 class="slider-item__name">Jennifer</h6>
+                        <button class="second_btn slider-item__button popup-link" onclick="togglePopup()">Learn more</button>
+                </div>
+                <div class="slider-item">
+                    <img src="img/pets-woody.svg" alt="Woody" class="slider-item__img">
+                    <h6 class="slider-item__name">Woody</h6>
+                    <a href="#popup-2 popup-link" class="button__popup"></a><button class="second_btn slider-item__button popup-link">Learn more</button>
+                </div>
+                
+           
         </div>
-        <button class="main_button">Get to know the rest</button>
+        <button class="main_button descr__button">Get to know the rest</button> 
 
-         <!-- popup -->
+
 
         <div id="popup" class="popup">
-            <div class="popup__body">
+
              <div class="popup__content">
                  <a href="#popup" class="popup__close" onclick="closePopup()">x</a>
                          <img src="img/modal-jennifer.svg" alt="dog" class="popup__img">
@@ -93,18 +128,16 @@
                              <h2 class="popup__name">Jennifer</h2>
                              <h3 class="popup__dog">Dog - Labrador</h3>
                              <p class="popup__desc">Jennifer is a sweet 2 months old Labrador that is patiently waiting to find a new forever home. This girl really enjoys being able to go outside to run and play, but won't hesitate to play up a storm in the house if she has all of her favorite toys.</p>
-                             <оl class="popup__items">
-                               <li class="popup__item"><strong class="popup__strong">Age: <span class="span">2 months</span></strong></li>
-                               <li class="popup__item"><strong class="popup__strong">Inoculations: <span class="span">none</span></strong></li>
-                               <li class="popup__item"><strong class="popup__strong">Diseases: <span class="span">none</span></strong></li>
-                               <li class="popup__item"><strong class="popup__strong">Parasites: <span class="span">none</span></strong></li>
+                             <ol class="popup__items">
+                               <li class="popup__item"><strong class="popup__strong">Age: </strong><span class="span">2 months</span></li>
+                               <li class="popup__item"><strong class="popup__strong">Inoculations: </strong><span class="span">none</span></li>
+                               <li class="popup__item"><strong class="popup__strong">Diseases: </strong><span class="span">none</span></li>
+                               <li class="popup__item"><strong class="popup__strong">Parasites: <span class="span">none</span></li>
                            </оl>
                          </div> 
-                     </div>
              </div>
-            </div>
           </div>
-    </section>
+    </section> 
 
     <!-- section help-shelter -->
 
@@ -150,7 +183,7 @@
             </div>
           </div>
         </div>
-    </section>
+    </section> 
  
     <!-- section donat  -->
 
@@ -167,6 +200,7 @@
     <!-- footer -->
 
      <footer class="footer">
+        <div class="footer__back">
         <div class="footer__bg-img">
               <div class="footer__questions">
                  <h2 class="footer__title title-second">For questions <br> and suggestions</h2>
@@ -199,9 +233,19 @@
               </div>
         </div>
     </div>
-     </footer>
-    
-     <script src="script.js"></script>
+</div>
+     </footer> 
+     
+     <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+     <script src="js.js/slick.min.js"></script>
+     <script>
+        $(document).ready(function(){
+            $('.slider').slick();
+        });
+     </script>
+     
+     <script src="js.js/slider.js"></script>
+     <script src="js.js/script-popup.js"></script>
 </body>
-</html>
+</html> 
 
